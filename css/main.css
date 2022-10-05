@@ -1,12 +1,13 @@
 html {
-    background-color: black
+    background-color: #181a1b
 }
 body {
     margin: 60px auto;
     width: 70%;
 }
 nav ul, footer ul {
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-family: "Share Tech Mono";
+    src: url(/fonts/ShareTechMono-Regular.ttf);
     padding: 0px;
     list-style: none;
     font-weight: bold;
@@ -23,21 +24,36 @@ a:hover {
     text-decoration: underline;
 }
 h1 {
-    font-size: 3em;
-    font-family:'Helvetica', 'Arial', 'Sans-Serif';
+    font-size: 4em;
+    font-family: "Share Tech Mono";
+    src: url(/fonts/ShareTechMono-Regular.ttf);
+    color: #e4e4e4;
 }
+
+h3 {
+    font-size: 2em;
+    font-family: "Share Tech Mono";
+    src: url(/fonts/ShareTechMono-Regular.ttf);
+    color: #e4e4e4;
+}
+
+
 p {
     font-size: 1.5em;
     line-height: 1.4em;
+    font-family: "Share Tech Mono";
+    src: url(/fonts/ShareTechMono-Regular.ttf);
     color: #333;
 }
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
+    font-family: "Share Tech Mono";
+    src: url(/fonts/ShareTechMono-Regular.ttf);
 }
 
-ul.posts { 
-    margin: 20px auto 40px; 
+ul.posts {
+    margin: 20px auto 40px;
     font-size: 1.5em;
 }
 

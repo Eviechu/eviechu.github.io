@@ -1,6 +1,6 @@
 @font-face {
     font-family: "ShareTechMono";
-    src: url(http://eviechu.github.io/fonts/ShareTechMono-Regular.ttf) format("truetype");
+    src: url(../fonts/ShareTechMono-Regular.ttf) format("truetype");
 }
 html {
     background-color: #181a1b

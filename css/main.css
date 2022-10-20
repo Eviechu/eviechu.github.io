@@ -11,9 +11,12 @@ body {
 }
 nav ul, footer ul {
     font-family: "ShareTechMono";
+    font-size: 1.3em;
     padding: 0px;
     list-style: none;
     font-weight: bold;
+    display: flex;
+    align-items: center;
 }
 nav ul li, footer ul li {
     display: inline-flex;

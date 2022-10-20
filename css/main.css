@@ -7,13 +7,13 @@ body {
 }
 nav ul, footer ul {
     font-family: "Share Tech Mono";
-    src: url(/fonts/ShareTechMono-Regular.ttf);
+    src: url(../fonts/ShareTechMono-Regular.ttf);
     padding: 0px;
     list-style: none;
     font-weight: bold;
 }
 nav ul li, footer ul li {
-    display: inline;
+    display: inline-flex;
     margin-right: 20px;
 }
 a {
@@ -43,7 +43,7 @@ p {
     line-height: 1.4em;
     font-family: "Share Tech Mono";
     src: url(/fonts/ShareTechMono-Regular.ttf);
-    color: #333;
+    color: rgb(248, 142, 208);
 }
 footer {
     border-top: 1px solid #d5d5d5;

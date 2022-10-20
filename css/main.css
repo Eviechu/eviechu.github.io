@@ -7,7 +7,7 @@ body {
 }
 nav ul, footer ul {
     font-family: "Share Tech Mono";
-    src: url(../fonts/ShareTechMono-Regular.ttf);
+    src: url(/fonts/ShareTechMono-Regular.ttf);
     padding: 0px;
     list-style: none;
     font-weight: bold;

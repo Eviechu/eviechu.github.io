@@ -2,13 +2,19 @@
     font-family: "ShareTechMono";
     src: url(../fonts/ShareTechMono-Regular.ttf) format("truetype");
 }
+
+/* Page background */
 html {
     background-color: rgb(24, 26, 28)
 }
+
+/* Dimensions */
 body {
     margin: 2.5em auto;
     width: 80%;
 }
+
+/* Top Navbar */
 nav ul, footer ul {
     font-family: "ShareTechMono";
     font-size: 1.3em;
@@ -24,6 +30,8 @@ nav ul li, footer ul li {
     align-items: center;
     margin-right: 1.25em;
 }
+
+/* Regular links */
 a {
     text-decoration: none;
     color: rgb(150, 150, 150);
@@ -32,40 +40,76 @@ a:hover {
     scale: 1.1;
     color: rgb(180, 180, 180);
 }
+
+/* Main header */
 h1 {
     font-size: 4em;
     font-family: "ShareTechMono";
-    src: url(/fonts/ShareTechMono-Regular.ttf);
     color: rgb(226, 226, 226);
 }
 
+/* Page headers */
 h3 {
     font-size: 2em;
     font-family: "ShareTechMono";
-    src: url(/fonts/ShareTechMono-Regular.ttf);
     color: rgb(228, 228, 228);
 }
 
-
+/* Main Text */
 p {
     font-size: 1.5em;
     line-height: 1.4em;
     font-family: "ShareTechMono";
-    src: url(/fonts/ShareTechMono-Regular.ttf);
     color: rgb(248, 142, 208);
 }
+
+/* Div */
+div {
+    display: inline-block;
+}
+
+/* Links page - Links box */
+.Links {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 500px;
+    font-size: 1.5em;
+    line-height: 1.4em;
+    font-family: "ShareTechMono";
+    color: rgb(248, 142, 208);
+    background-color: rgb(248, 142, 208);
+    width: 15em;
+    height: 2.5em;
+    font-weight: bold;
+}
+links a {
+    color: rgb(40, 40, 40);
+}
+links a:hover {
+    scale: 1.1;
+    color: rgb(75, 75, 75);
+}
+
+/* Footer */
 footer {
     border-top: 1px solid #d5d5d5;
     font-size: .8em;
     font-family: "ShareTechMono";
-    src: url(/fonts/ShareTechMono-Regular.ttf);
 }
 
+/*  */
 ul.posts {
     margin: 20px auto 40px;
     font-size: 1.5em;
 }
-
 ul.posts li {
     list-style: none;
 }

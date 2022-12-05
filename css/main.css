@@ -1,116 +1,154 @@
+
+/*
+================================================================
+|                                                              |
+|    Coded and designed by Evellyn Alicia [Github: Eviechu]    |
+|    Licensed under ACSL (Anti-Capitalist Software License)    |
+|               https://anticapitalist.software/               |
+|                                                              |
+================================================================
+*/
+
+
+/* ================================== */
+/*            Font Loading            */
+/* ================================== */
 @font-face {
-    font-family: "ShareTechMono";
-    src: url(../fonts/ShareTechMono-Regular.ttf) format("truetype");
+    font-family: "Nightcore";
+    src: url(../fonts/Nightcore\ Demo.ttf) format(truetype);
+}
+@font-face {
+    font-family: "diediedie";
+    src: url(../fonts/diediedie.TTF) format(truetype);
 }
 
-/* Page background */
+/* ================================= */
+/*    Layout & Element Formatting    */
+/* ================================= */
 html {
-    background-color: rgb(24, 26, 28)
+    background-color: black;
+    background-image: url(../images/background.jpg);
+    background-size: cover;
+    height: 100%;
+    margin: 0;
 }
-
-/* Dimensions */
 body {
-    background-color: rgb(24, 26, 28);
-    margin: 2.5em auto;
+    margin: 1.5em auto !important;
     width: 80%;
 }
-
-/* Top Navbar */
-nav ul, footer ul {
-    font-family: "ShareTechMono";
-    font-size: 1.3em;
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgb(61, 61, 61);
+.main-text {
+    margin-top: 3em;
 }
-nav ul li, footer ul li {
+/* ▼ Top Navigation Bar ▼ */
+.navbar #name {
     display: flex;
+    justify-content: center;
+}
+.navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+.navbar nav ul li {
+    margin-right: 1.5em;
+}
+.navbar nav {
+    border: 0px;
+    border-bottom: 1px; 
+    border-style: solid;
+    border-color: white;
+}
+/* ▼ Link Area ▼ */
+.linkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    margin-right: 1.25em;
+}
+.links * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linkbox h3 {
+    margin: 0.75em 0em 0.25em 0em;
+}
+/* ▼ Link Boxes ▼ */
+.links a {
+    width: 20em;
+    height: 2.5em;
+    border-style: solid;
+    border-radius: 500px;
+    border-width: 1px;
+    margin: 1em auto;
+    background-color: black;
+}
+.links a:hover {
+    scale: 1.1;
+    transform: rotate(-2deg);
+    background-image: url(../images/blood.png);
+    background-size: 110%;
+    background-position: -0.5em;
+    background-repeat: no-repeat;
 }
 
-/* Regular links */
-a {
+
+
+/* ================================= */
+/*          Text Formatting          */
+/* ================================= */
+.navbar #name a {
+    font-family: Nightcore;
+    font-size: 4em;
+    color: white;
     text-decoration: none;
-    color: rgb(150, 150, 150);
+}
+.navbar nav ul li a {
+    font-family: 'Montserrat', serif;
+    color: white;
+    font-size: 1.25em;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar nav ul li:hover {
+    scale: 1.1;
+}
+.main-text h3 {
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color: white;
+}
+.main-text p {
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color: white;
+}
+.linkbox h3 {
+    font-family: 'Montserrat', serif;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: white;
+}
+.links * {
+    font-family: 'Montserrat', serif;
+    font-size: 1.25em;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* ================================ */
+/*              Cursor              */
+/* ================================ */
+html {
+    cursor: url(../cursors/oth702.cur), auto !important;
+}
+.wrapper {
+    cursor: url(../cursors/oth702.cur), auto !important;
 }
 a:hover {
-    scale: 1.1;
-    color: rgb(180, 180, 180);
-}
-
-/* Main header */
-h1 {
-    font-size: 4em;
-    font-family: "ShareTechMono";
-    color: rgb(226, 226, 226);
-}
-
-/* Page headers */
-h3 {
-    font-size: 2em;
-    font-family: "ShareTechMono";
-    color: rgb(228, 228, 228);
-}
-
-/* Main Text */
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    font-family: "ShareTechMono";
-    color: rgb(248, 142, 208);
-}
-
-/* Div */
-div {
-    display: inline-block;
-}
-
-/* Links page - Links box */
-.Links {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-
-links {
-    font-size: 1.5em;
-    font-weight: bold;
-    font-family: "ShareTechMono";
-    padding-bottom: .5em;
-}
-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(24, 26, 28);
-    background-color: rgb(248, 142, 208);
-    border-radius: 500px;
-    width: 16em;
-    height: 2.5em;
-}
-links a:hover {
-    scale: 1.05;
-    color: rgb(24, 26, 28);
-}
-
-/* Footer */
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-    font-family: "ShareTechMono";
-}
-
-/*  */
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
-}
-ul.posts li {
-    list-style: none;
+    cursor: url(../cursors/oth704.cur), auto !important;
 }

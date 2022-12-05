@@ -18,7 +18,7 @@
 /* ================================== */
 @font-face {
     font-family: "Nightcore";
-    src: url(../fonts/Nightcore\ Demo.ttf) format(truetype);
+    src: url(../fonts/Nightcore.ttf) format(truetype);
 }
 @font-face {
     font-family: "diediedie";
@@ -177,7 +177,6 @@ a:hover {
     /* ================================= */
     /*    Layout & Element Formatting    */
     /* ================================= */
-
     body {
         width: 90%;
     }
@@ -203,7 +202,6 @@ a:hover {
     /* ================================= */
     /*          Text Formatting          */
     /* ================================= */
-
     .navbar #name a {
         font-size: 10vw;
     }

@@ -29,11 +29,13 @@ html {
     background-color: black;
     background-image: url(../images/background.jpg);
     background-size: cover;
+    background-attachment: fixed;
     height: 100%;
     margin: 0;
+    scrollbar-width: none;
 }
 body {
-    margin: 1.5em auto !important;
+    margin: 1.5em auto;
     width: 80%;
 }
 .main-text {
@@ -71,7 +73,7 @@ body {
     justify-content: center;
     align-items: center;
 }
-.linkbox h3 {
+.linkbox h1 {
     margin: 0.75em 0em 0.25em 0em;
 }
 /* ▼ Link Boxes ▼ */
@@ -114,7 +116,7 @@ body {
 .navbar nav ul li:hover {
     scale: 1.1;
 }
-.main-text h3 {
+.main-text h1 {
     font-family: 'Montserrat', serif;
     font-size: 1em;
     color: white;
@@ -124,7 +126,7 @@ body {
     font-size: 1em;
     color: white;
 }
-.linkbox h3 {
+.linkbox h1 {
     font-family: 'Montserrat', serif;
     font-size: 2.5em;
     font-weight: bold;
@@ -137,8 +139,6 @@ body {
     color: white;
     text-decoration: none;
 }
-
-
 
 /* ================================ */
 /*              Cursor              */

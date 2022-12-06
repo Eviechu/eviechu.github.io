@@ -9,21 +9,19 @@
 ================================================================
 */
 
-
-
-/* Main Style - Any screen size */
-
-/* ================================== */
-/*            Font Loading            */
-/* ================================== */
+/* Local font loading */
 @font-face {
     font-family: "Nightcore";
     src: url("../fonts/Nightcore.ttf") format("truetype");
 }
 
-/* ================================= */
-/*    Layout & Element Formatting    */
-/* ================================= */
+
+
+/* 
+=====================================
+|    Layout & Element Formatting    |
+=====================================
+*/
 html {
     background-color: black;
     background-image: url("../images/background.jpg");
@@ -87,7 +85,7 @@ body {
 .links {
     margin-top: 15px;
 }
-.links a {
+.links a { 
     width: 400px;
     height: 50px;
     border-style: solid;
@@ -105,9 +103,13 @@ body {
     background-repeat: no-repeat;
 }
 
-/* ================================= */
-/*          Text Formatting          */
-/* ================================= */
+
+
+/* 
+=====================================
+|          Text Formatting          |
+=====================================
+*/
 .name-logo a {
     font-family: Nightcore;
     font-size: 90px;
@@ -133,7 +135,7 @@ body {
     font-family: 'Montserrat', serif;
     font-size: 1em;
     color: white;
-}
+}/* 
 .linkbox h1 {
     font-family: 'Montserrat', serif;
     font-size: 1.5em;
@@ -148,26 +150,32 @@ body {
     text-decoration: none;
 }
 
-/* ================================ */
-/*              Cursor              */
-/* ================================ */
+
+
+/* 
+====================================
+|              Cursor              |
+====================================
+*/
+
+/* Regular cursor */
 .wrapper, * {
     cursor: url(../cursors/oth702.cur), auto !important;
 }
+/* Hyperlink cursor */
 a:hover {
     cursor: url(../cursors/oth704.cur), auto !important;
 }
 
 
 
-/* ===================================== */
-/* |                                   | */
-/* |  ▼  Responsive Web - Mobile  ▼  | */
-/* |                                   | */
-/* ===================================== */
+/* 
+=====================================
+|  ▼  Responsive Web - Mobile  ▼  |
+=====================================
+*/
 
-/* M-Style - <480px screen width */
-
+/* Mobile CSS - <480px screen width */
 @media screen and (max-width: 480px){
 
     /* ================================= */
@@ -213,16 +221,25 @@ a:hover {
     .links * {
         font-size: 4vw;
     }
-
 }
 
+/* Width check for Animation playability */
 @media screen and (min-width: 481px){
     .name-logo {
-        animation: float 6s ease-in-out infinite;
+        animation: logoFloat 6s ease-in-out infinite;
     }
 }
 
-@keyframes float {
+
+
+/* 
+==================================== 
+|        ▼  Animations  ▼        | 
+==================================== 
+*/
+
+/* Floating animation - Main Logo */
+@keyframes logoFloat {
     0% {
 		transform: translatey(0px);
 	}

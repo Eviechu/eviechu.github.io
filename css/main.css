@@ -152,16 +152,12 @@ body {
 /* ================================ */
 /*              Cursor              */
 /* ================================ */
-html {
-    cursor: url(../cursors/oth702.cur), auto !important;
-}
-.wrapper {
+.wrapper, * {
     cursor: url(../cursors/oth702.cur), auto !important;
 }
 a:hover {
     cursor: url(../cursors/oth704.cur), auto !important;
 }
-
 
 
 

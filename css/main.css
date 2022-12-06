@@ -18,11 +18,7 @@
 /* ================================== */
 @font-face {
     font-family: "Nightcore";
-    src: url(../fonts/Nightcore.ttf) format(truetype);
-}
-@font-face {
-    font-family: "diediedie";
-    src: url(../fonts/diediedie.TTF) format(truetype);
+    src: url("../fonts/Nightcore.ttf") format("truetype");
 }
 
 /* ================================= */
@@ -30,7 +26,7 @@
 /* ================================= */
 html {
     background-color: black;
-    background-image: url(../images/background.jpg);
+    background-image: url("../images/background.jpg");
     background-size: cover;
     background-attachment: fixed;
     height: 100%;
@@ -39,22 +35,27 @@ html {
 }
 body {
     margin: 1.5vw auto;
-    width: 80%;
+    width: 85%;
 }
 .main-text {
     margin-top: 3vw;
 }
 /* ▼ Top Navigation Bar ▼ */
-.navbar #name {
-    display: flex;
-    justify-content: center;
+.navbar{
+    text-align: center;
+}
+.name-logo {
+    display: inline-block;
+    margin-top: 5px;
+    height: fit-content;
+    width: fit-content;
 }
 .navbar nav ul {
     display: flex;
     flex-direction: row;
     justify-content: start;
-    padding: 0;
     padding-left: 1em;
+    margin-top: -25px;
 }
 .navbar nav ul li {
     margin-right: 25px;
@@ -98,7 +99,7 @@ body {
 .links a:hover {
     scale: 1.1;
     transform: rotate(-2deg);
-    background-image: url(../images/blood.png);
+    background-image: url("../images/blood.png");
     background-size: 110%;
     background-position: -1em;
     background-repeat: no-repeat;
@@ -107,9 +108,9 @@ body {
 /* ================================= */
 /*          Text Formatting          */
 /* ================================= */
-.navbar #name a {
+.name-logo a {
     font-family: Nightcore;
-    font-size: 75px;
+    font-size: 90px;
     color: white;
     text-decoration: none;
 }
@@ -146,6 +147,7 @@ body {
     color: white;
     text-decoration: none;
 }
+
 
 /* ================================ */
 /*              Cursor              */
@@ -202,7 +204,7 @@ a:hover {
     /* ================================= */
     /*          Text Formatting          */
     /* ================================= */
-    .navbar #name a {
+    .name-logo a {
         font-size: 10vw;
     }
     .navbar nav ul li a {
@@ -220,4 +222,22 @@ a:hover {
         font-size: 4vw;
     }
 
+}
+
+@media screen and (min-width: 481px){
+    .name-logo {
+        animation: float 6s ease-in-out infinite;
+    }
+}
+
+@keyframes float {
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
 }

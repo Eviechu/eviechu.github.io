@@ -148,7 +148,6 @@ body {
     text-decoration: none;
 }
 
-
 /* ================================ */
 /*              Cursor              */
 /* ================================ */
@@ -158,7 +157,6 @@ body {
 a:hover {
     cursor: url(../cursors/oth704.cur), auto !important;
 }
-
 
 
 
@@ -175,13 +173,11 @@ a:hover {
     /* ================================= */
     /*    Layout & Element Formatting    */
     /* ================================= */
-    body {
-        width: 90%;
-    }
     .navbar nav ul {
         justify-content: center;
         width: auto;
         padding-left: 0;
+        margin-top: 15px;
     }
     .navbar nav ul li {
         margin-left: auto;

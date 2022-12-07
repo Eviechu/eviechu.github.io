@@ -6,7 +6,7 @@ window.mobileCheck = function() {
 
 function toggleTheme() {
     var theme = document.getElementsByTagName('link')[0];
-    if (check == 'False') {
+    if (check == false) {
         theme.setAttribute('href', 'main.css');
     } else {
         theme.setAttribute('href', 'mobile.css');

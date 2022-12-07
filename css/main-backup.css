@@ -170,10 +170,58 @@ a:hover {
 
 
 /* 
-==================================== 
-|        ▼  Animations  ▼        | 
-==================================== 
+=====================================
+|  ▼  Responsive Web - Mobile  ▼  |
+=====================================
 */
+
+/* Mobile CSS - <480px screen width */
+@media screen and (max-width: 480px){
+
+    /* ================================= */
+    /*    Layout & Element Formatting    */
+    /* ================================= */
+    .navbar nav ul {
+        justify-content: center;
+        width: auto;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .navbar nav ul li {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ▼ Link Boxes ▼ */
+    .links {
+        margin-top: 3vw;
+    }
+    .links a {
+        width: 60vw;
+        height: 9vw;
+        margin: 3vw auto;
+    }
+    
+    /* ================================= */
+    /*          Text Formatting          */
+    /* ================================= */
+    .name-logo a {
+        font-size: 10vw;
+    }
+    .navbar nav ul li a {
+        font-size: 4vw;
+    }
+    .main-text h1 {
+        font-size: 4.5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .main-text p {
+        font-size: 3.5vw;
+    }
+    .links * {
+        font-size: 4vw;
+    }
+}
 
 /* Width check for Animation playability */
 @media screen and (min-width: 481px){
@@ -181,6 +229,14 @@ a:hover {
         animation: logoFloat 6s ease-in-out infinite;
     }
 }
+
+
+
+/* 
+==================================== 
+|        ▼  Animations  ▼        | 
+==================================== 
+*/
 
 /* Floating animation - Main Logo */
 @keyframes logoFloat {

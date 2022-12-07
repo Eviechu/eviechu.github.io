@@ -1,0 +1,25 @@
+/* 
+==================================== 
+|        ▼  Animations  ▼        | 
+==================================== 
+*/
+
+/* Width check for Animation playability */
+@media screen and (min-width: 481px){
+    .name-logo {
+        animation: logoFloat 6s ease-in-out infinite;
+    }
+}
+
+/* Floating animation - Main Logo */
+@keyframes logoFloat {
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

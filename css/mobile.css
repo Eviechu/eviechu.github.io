@@ -9,13 +9,7 @@
 ================================================================
 */
 
-/* Local font loading */
-@font-face {
-    font-family: "Nightcore";
-    src: url("../fonts/Nightcore.ttf") format("truetype");
-}
-
-
+@font-face {font-family: "Nightcore"; src: url("../fonts/Nightcore.ttf") format("truetype");}
 
 /* 
 =====================================

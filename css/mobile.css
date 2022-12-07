@@ -1,0 +1,252 @@
+
+/*
+================================================================
+|                                                              |
+|    Coded and designed by Evellyn Alicia [Github: Eviechu]    |
+|    Licensed under ACSL (Anti-Capitalist Software License)    |
+|               https://anticapitalist.software/               |
+|                                                              |
+================================================================
+*/
+
+/* Local font loading */
+@font-face {
+    font-family: "Nightcore";
+    src: url("../fonts/Nightcore.ttf") format("truetype");
+}
+
+
+
+/* 
+=====================================
+|    Layout & Element Formatting    |
+=====================================
+*/
+html {
+    background-color: rgb(255, 0, 0);
+    /*background-image: url("../images/background.jpg");*/
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    scrollbar-width: none;
+}
+body {
+    margin: 1.5vw auto;
+    width: 85%;
+}
+.main-text {
+    margin-top: 3vw;
+}
+/* ▼ Top Navigation Bar ▼ */
+.navbar{
+    text-align: center;
+}
+.name-logo {
+    display: inline-block;
+    margin-top: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+.navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 1em;
+    margin-top: -25px;
+}
+.navbar nav ul li {
+    margin-right: 25px;
+    list-style: none;
+}
+.navbar nav {
+    border: 0px;
+    border-bottom: 1px; 
+    border-style: solid;
+    border-color: white;
+}
+/* ▼ Link Area ▼ */
+.linkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links * {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.linkbox h1 {
+    margin: 0.75vw 0vw 0.25vw 0vw;
+}
+/* ▼ Link Boxes ▼ */
+.links {
+    margin-top: 15px;
+}
+.links a { 
+    width: 400px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 500px;
+    border-width: 1px;
+    margin: 15px auto;
+    background-color: black;
+}
+.links a:hover {
+    scale: 1.1;
+    transform: rotate(-2deg);
+    background-image: url("../images/blood.png");
+    background-size: 110%;
+    background-position: -1em;
+    background-repeat: no-repeat;
+}
+
+
+
+/* 
+=====================================
+|          Text Formatting          |
+=====================================
+*/
+.name-logo a {
+    font-family: Nightcore;
+    font-size: 90px;
+    color: white;
+    text-decoration: none;
+}
+.navbar nav ul li a {
+    font-family: 'Montserrat', serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navbar nav ul li:hover {
+    scale: 1.1;
+}
+.main-text h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5em;
+    color: white;
+}
+.main-text p {
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color: white;
+}
+.linkbox h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+}
+.links * {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* 
+====================================
+|              Cursor              |
+====================================
+*/
+
+/* Regular cursor */
+.wrapper, * {
+    cursor: url(../cursors/oth702.cur), auto !important;
+}
+/* Hyperlink cursor */
+a:hover {
+    cursor: url(../cursors/oth704.cur), auto !important;
+}
+
+
+
+/* 
+=====================================
+|  ▼  Responsive Web - Mobile  ▼  |
+=====================================
+*/
+
+/* Mobile CSS - <480px screen width */
+@media screen and (max-width: 480px){
+
+    /* ================================= */
+    /*    Layout & Element Formatting    */
+    /* ================================= */
+    .navbar nav ul {
+        justify-content: center;
+        width: auto;
+        padding-left: 0;
+        margin-top: 15px;
+    }
+    .navbar nav ul li {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* ▼ Link Boxes ▼ */
+    .links {
+        margin-top: 3vw;
+    }
+    .links a {
+        width: 60vw;
+        height: 9vw;
+        margin: 3vw auto;
+    }
+    
+    /* ================================= */
+    /*          Text Formatting          */
+    /* ================================= */
+    .name-logo a {
+        font-size: 10vw;
+    }
+    .navbar nav ul li a {
+        font-size: 4vw;
+    }
+    .main-text h1 {
+        font-size: 4.5vw;
+        display: flex;
+        justify-content: center;
+    }
+    .main-text p {
+        font-size: 3.5vw;
+    }
+    .links * {
+        font-size: 4vw;
+    }
+}
+
+/* Width check for Animation playability */
+@media screen and (min-width: 481px){
+    .name-logo {
+        animation: logoFloat 6s ease-in-out infinite;
+    }
+}
+
+
+
+/* 
+==================================== 
+|        ▼  Animations  ▼        | 
+==================================== 
+*/
+
+/* Floating animation - Main Logo */
+@keyframes logoFloat {
+    0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

@@ -36,7 +36,7 @@ body {
 .navbar{
     text-align: center;
 }
-.name-logo {
+.main-logo {
     display: inline-block;
     margin-top: 5px;
     height: fit-content;
@@ -110,7 +110,7 @@ body {
 |          Text Formatting          |
 =====================================
 */
-.name-logo a {
+.main-logo {
     font-family: Nightcore;
     font-size: 10vw;
     color: white;

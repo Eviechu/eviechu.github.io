@@ -32,11 +32,13 @@ body {
 .main-text {
     margin-top: 3vw;
 }
+
 /* ▼ Top Navigation Bar ▼ */
 .navbar{
     text-align: center;
 }
-.main-logo {
+/* Fits the <div> around the main logo */
+.animate.float {
     display: inline-block;
     margin-top: 5px;
     height: fit-content;
@@ -61,6 +63,7 @@ body {
     border-style: solid;
     border-color: white;
 }
+
 /* ▼ Link Area ▼ */
 .linkbox {
     display: flex;

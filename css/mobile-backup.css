@@ -9,13 +9,9 @@
 ================================================================
 */
 
-@import url("animations.css");
+
 @font-face {font-family: "Nightcore"; src: url("../fonts/Nightcore.ttf") format("truetype");}
-@font-face {font-family: "Adler"; src: url("../fonts/adler.regular.ttf") format("truetype");}
-@font-face {font-family: "Whitney Bold"; src: url("../fonts/whitneybold.otf") format("opentype");}
-@font-face {font-family: "Whitney SemiBold"; src: url("../fonts/whitneysemibold.otf") format("opentype");}
-@font-face {font-family: "Whitney Regular"; src: url("../fonts/whitneymedium.otf") format("opentype");}
-@font-face {font-family: "Whitney Light"; src: url("../fonts/whitneylight.otf") format("opentype");}
+
 
 /* 
 =====================================
@@ -53,12 +49,14 @@ body {
 .navbar nav ul {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    padding-left: 1em;
-    margin-top: -25px;
+    justify-content: center;
+    width: auto;
+    padding-left: 0;
+    margin-top: 15px;
 }
 .navbar nav ul li {
-    margin-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
     list-style: none;
 }
 .navbar nav {
@@ -69,7 +67,13 @@ body {
 }
 
 /* ▼ Link Area ▼ */
-.links a {
+.linkbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.links * {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,15 +84,15 @@ body {
 }
 /* ▼ Link Boxes ▼ */
 .links {
-    margin-top: 30px;
+    margin-top: 3vw;
 }
 .links a { 
-    width: 500px;
-    height: 60px;
+    width: 60vw;
+    height: 9vw;
     border-style: solid;
     border-radius: 500px;
     border-width: 1px;
-    margin: 15px auto;
+    margin: 3vw auto;
     background-color: black;
 }
 .links a:hover {
@@ -98,6 +102,10 @@ body {
     background-size: 110%;
     background-position: -1em;
     background-repeat: no-repeat;
+}
+.main-text h1 {
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -109,28 +117,28 @@ body {
 */
 .main-logo {
     font-family: Nightcore;
-    font-size: 90px;
+    font-size: 10vw;
     color: white;
     text-decoration: none;
 }
 .navbar nav ul li a {
-    font-family: 'Adler', serif;
+    font-family: 'Montserrat', serif;
     color: white;
-    font-size: 20px;
+    font-size: 4vw;
     text-decoration: none;
-    font-weight: normal;
+    font-weight: bold;
 }
 .navbar nav ul li:hover {
-    scale: 1.15;
+    scale: 1.1;
 }
 .main-text h1 {
     font-family: 'Montserrat', serif;
-    font-size: 1.5em;
+    font-size: 4.5vw;
     color: white;
 }
 .main-text p {
     font-family: 'Montserrat', serif;
-    font-size: 1em;
+    font-size: 3.5vw;
     color: white;
 }
 .linkbox h1 {
@@ -139,9 +147,9 @@ body {
     font-weight: bold;
     color: white;
 }
-.links a {
+.links * {
     font-family: 'Montserrat', serif;
-    font-size: 20px;
+    font-size: 4vw;
     font-weight: bold;
     color: white;
     text-decoration: none;

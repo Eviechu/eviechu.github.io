@@ -65,7 +65,7 @@ nav .nav-list {
     width: 100%;
     top: var(--header-height);
     right: 0;
-    left: 85%;
+    width: 250px;
     transform: translateY(-100%);
     z-index: -1;
     transition: .6s;

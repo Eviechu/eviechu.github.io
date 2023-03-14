@@ -1,23 +1,46 @@
 <!DOCTYPE html>
+
+<!--
+Double-Click Me!
+================================================================
+|                                                              |
+|    Coded and designed by Evellyn Alicia [Github: Eviechu]    |
+|    Licensed under ACSL (Anti-Capitalist Software License)    |
+|               https://anticapitalist.software/               |
+|                                                              |
+================================================================
+-->
+
 <html>
 	<head>
-		<title>Evellyn Alicia</title>
-		<link href="css/main.css" rel="stylesheet" type="text/css">
-		<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+		<title id="title">Evellyn Alicia</title>
+		<link id="theme" rel="stylesheet" type="text/css" href="css/main.css">
+		<script type="text/javascript" src="javascript/mobileDetection.js"></script>
+		<link rel="icon" type="image/x-icon" href="images/favicon.png">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
 	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="index.html"><img src="images/CatCafe.png" style="width:3em;height:3em"></a></li>
-	        	<li><a href="HTML/about.html">About</a></li>
-				<li><a href="HTML/nsfw.html">NSFW</a></li>
-				<li><a href="HTML/faq.html">FAQ</a></li>
-				<li><a href="HTML/links.html">Links</a></li>
-    		</ul>
-		</nav>
-		<div>
-			<h3>Welcome!</h3>
-			<p>This is a WIP!</p>
+
+	<body onload="indexMobileDetect()">
+		<div class="wrapper">
+			<div class="navbar">
+				<div class="animate float">
+					<a class="main-logo" href="index.html">(Evellyn)</a>
+				</div>
+				
+				<nav>
+					<ul>
+						<li><a id="about" href="html/about.html">About</a></li>
+						<li><a id="faq" href="html/faq.html">FAQ</a></li>
+						<li><a id="links" href="html/links.html">Links</a></li>
+					</ul>
+				</nav>
+			</div>
+			
+			<section class="main-text">
+				<h1>Welcome!</h1>
+				<p>This is a WIP!</p>
+			</section>
 		</div>
 	</body>
 </html>

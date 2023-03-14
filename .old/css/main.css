@@ -1,116 +1,165 @@
-@font-face {
-    font-family: "ShareTechMono";
-    src: url(../fonts/ShareTechMono-Regular.ttf) format("truetype");
-}
 
-/* Page background */
+/*
+================================================================
+|                                                              |
+|    Coded and designed by Evellyn Alicia [Github: Eviechu]    |
+|    Licensed under ACSL (Anti-Capitalist Software License)    |
+|               https://anticapitalist.software/               |
+|                                                              |
+================================================================
+*/
+
+@import url("animations.css");
+@font-face {font-family: "Nightcore"; src: url("../fonts/Nightcore.ttf") format("truetype");}
+@font-face {font-family: "Adler"; src: url("../fonts/adler.regular.ttf") format("truetype");}
+@font-face {font-family: "Whitney Bold"; src: url("../fonts/whitneybold.otf") format("opentype");}
+@font-face {font-family: "Whitney SemiBold"; src: url("../fonts/whitneysemibold.otf") format("opentype");}
+@font-face {font-family: "Whitney Regular"; src: url("../fonts/whitneymedium.otf") format("opentype");}
+@font-face {font-family: "Whitney Light"; src: url("../fonts/whitneylight.otf") format("opentype");}
+
+/* 
+=====================================
+|    Layout & Element Formatting    |
+=====================================
+*/
 html {
-    background-color: rgb(24, 26, 28)
+    background-color: rgb(0, 0, 0);
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    scrollbar-width: none;
 }
-
-/* Dimensions */
 body {
-    background-color: rgb(24, 26, 28);
-    margin: 2.5em auto;
-    width: 80%;
+    margin: 1.5vw auto;
+    width: 85%;
+}
+.main-text {
+    margin-top: 3vw;
 }
 
-/* Top Navbar */
-nav ul, footer ul {
-    font-family: "ShareTechMono";
-    font-size: 1.3em;
-    padding: 0px;
-    list-style: none;
-    font-weight: bold;
-    display: flex;
-    align-items: center;
-    border-bottom: 1px solid rgb(61, 61, 61);
+/* ▼ Top Navigation Bar ▼ */
+.navbar{
+    text-align: center;
 }
-nav ul li, footer ul li {
-    display: flex;
-    align-items: center;
-    margin-right: 1.25em;
-}
-
-/* Regular links */
-a {
-    text-decoration: none;
-    color: rgb(150, 150, 150);
-}
-a:hover {
-    scale: 1.1;
-    color: rgb(180, 180, 180);
-}
-
-/* Main header */
-h1 {
-    font-size: 4em;
-    font-family: "ShareTechMono";
-    color: rgb(226, 226, 226);
-}
-
-/* Page headers */
-h3 {
-    font-size: 2em;
-    font-family: "ShareTechMono";
-    color: rgb(228, 228, 228);
-}
-
-/* Main Text */
-p {
-    font-size: 1.5em;
-    line-height: 1.4em;
-    font-family: "ShareTechMono";
-    color: rgb(248, 142, 208);
-}
-
-/* Div */
-div {
+/* Fits the <div> around the main logo */
+.animate.float {
     display: inline-block;
+    margin-top: 5px;
+    height: fit-content;
+    width: fit-content;
+}
+.navbar nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    padding-left: 1em;
+    margin-top: -25px;
+}
+.navbar nav ul li {
+    margin-right: 25px;
+    list-style: none;
+}
+.navbar nav {
+    border: 0px;
+    border-bottom: 1px; 
+    border-style: solid;
+    border-color: white;
 }
 
-/* Links page - Links box */
-.Links {
+/* ▼ Link Area ▼ */
+.links a {
     display: flex;
-    justify-content: center;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
+.linkbox h1 {
+    margin: 0.75vw 0vw 0.25vw 0vw;
+}
+/* ▼ Link Boxes ▼ */
+.links {
+    margin-top: 30px;
+}
+.links a { 
+    width: 500px;
+    height: 60px;
+    border-style: solid;
+    border-radius: 500px;
+    border-width: 1px;
+    margin: 15px auto;
+    background-color: black;
+}
+.links a:hover {
+    scale: 1.1;
+    transform: rotate(-2deg);
+    background-image: url("../images/blood.png");
+    background-size: 110%;
+    background-position: -1em;
+    background-repeat: no-repeat;
+}
 
-links {
+
+
+/* 
+=====================================
+|          Text Formatting          |
+=====================================
+*/
+.main-logo {
+    font-family: Nightcore;
+    font-size: 90px;
+    color: white;
+    text-decoration: none;
+}
+.navbar nav ul li a {
+    font-family: 'Adler', serif;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: normal;
+}
+.navbar nav ul li:hover {
+    scale: 1.15;
+}
+.main-text h1 {
+    font-family: 'Montserrat', serif;
+    font-size: 1.5em;
+    color: white;
+}
+.main-text p {
+    font-family: 'Montserrat', serif;
+    font-size: 1em;
+    color: white;
+}
+.linkbox h1 {
+    font-family: 'Montserrat', serif;
     font-size: 1.5em;
     font-weight: bold;
-    font-family: "ShareTechMono";
-    padding-bottom: .5em;
+    color: white;
 }
-links a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: rgb(24, 26, 28);
-    background-color: rgb(248, 142, 208);
-    border-radius: 500px;
-    width: 16em;
-    height: 2.5em;
-}
-links a:hover {
-    scale: 1.05;
-    color: rgb(24, 26, 28);
+.links a {
+    font-family: 'Montserrat', serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
 }
 
-/* Footer */
-footer {
-    border-top: 1px solid #d5d5d5;
-    font-size: .8em;
-    font-family: "ShareTechMono";
-}
 
-/*  */
-ul.posts {
-    margin: 20px auto 40px;
-    font-size: 1.5em;
+
+/* 
+====================================
+|              Cursor              |
+====================================
+*/
+
+/* Regular cursor */
+.wrapper, * {
+    cursor: url(../cursors/oth702.cur), auto !important;
 }
-ul.posts li {
-    list-style: none;
+/* Hyperlink cursor */
+a:hover {
+    cursor: url(../cursors/oth704.cur), auto !important;
 }

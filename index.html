@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <!--
 Double-Click Me!
 ================================================================
@@ -13,34 +12,44 @@ Double-Click Me!
 
 <html>
 	<head>
-		<title id="title">Evellyn Alicia</title>
-		<link id="theme" rel="stylesheet" type="text/css" href="css/main.css">
-		<script type="text/javascript" src="javascript/mobileDetection.js"></script>
+		<title id="title">Evellyn Alicia - Home</title>
+		<link id="theme" rel="stylesheet" type="text/css" href="../css/main.css">
 		<link rel="icon" type="image/x-icon" href="images/favicon.png">
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/comfortaa-bold" type="text/css"/> 
+		<link rel="stylesheet" media="screen" href="https://fontlibrary.org//face/monodeco" type="text/css"/> 
 	</head>
 
-	<body onload="indexMobileDetect()">
-		<div class="wrapper">
+	<body>
+		<input type="checkbox" id="toggle">
+		<nav class="comforta">
 			<div class="navbar">
-				<div class="animate float">
-					<a class="main-logo" href="index.html">(Evellyn)</a>
-				</div>
-				
-				<nav>
-					<ul>
-						<li><a id="about" href="html/about.html">About</a></li>
-						<li><a id="faq" href="html/faq.html">FAQ</a></li>
-						<li><a id="links" href="html/links.html">Links</a></li>
-					</ul>
-				</nav>
+				<a class="navbar-title" href="#">
+					<span class="name-decor animate blink"> > </span>
+					<span class="website-name"> Eviechu </span>
+				</a>	
 			</div>
 			
-			<section class="main-text">
-				<h1>Welcome!</h1>
-				<p>This is a WIP!</p>
-			</section>
+			<ul class="nav-list">
+				<li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+				<li class="nav-item"><a class="nav-link" href="html/about.html">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="html/faq.html">FAQ</a></li>
+				<li class="nav-item"><a class="nav-link" href="html/links.html">Links</a></li>
+				<li class="nav-item"><a class="nav-link" href="html/nsfw.html">NSFW</a></li>
+			</ul>
+			
+			<div>
+				<label class="navbar-toggle" for="toggle">
+					<div class="menu-burger"></div>
+				</label>
+			</div>
+		</nav>
+
+		<div class="contents">
+			<h1 class="comforta">Welcome</h1>
+		</div>
+
+		<div class="footer comforta">
+			<p>License Placeholder</p>
 		</div>
 	</body>
 </html>

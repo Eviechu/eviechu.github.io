@@ -48,6 +48,8 @@ body {
     list-style: none;
     padding-bottom: 10px;
     border-bottom: 1px solid white;
+    margin: 10px 0;
+    padding: 10px 0;
 }
 
 .navigators {

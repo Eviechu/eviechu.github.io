@@ -29,6 +29,38 @@ body {
     margin: 25px 75px 5px;
 }
 
+/* Main Logo */
+
+.moonsymbol {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    --moon-size: 75px;
+}
+.moonleft {
+    background-color: transparent;
+    width: var(--moon-size);
+    height: var(--moon-size);
+    border-radius: 50%;
+    box-shadow: 24px 0px #fff; 
+}
+.moon {
+    background-color: #fff;
+    width: var(--moon-size);
+    height: var(--moon-size);
+    border-radius: 50%;
+}
+.moonright {
+    background-color: transparent;
+    width: var(--moon-size);
+    height: var(--moon-size);
+    border-radius: 50%;
+    box-shadow: -24px 0px #fff; 
+}
+
+/* Main Page */
+
 .contents {
     margin: 0px 100px;
     padding: 5px 0px;
@@ -93,31 +125,39 @@ body {
     height: 31px;
 }
 
-.moonsymbol {
-    justify-content: center;
+/* -----------------
+
+My Corner Stylesheet 
+
+----------------- */ 
+
+.corner-links {
+    margin: 28px 0px;
+    height: auto;
     display: flex;
     flex-direction: row;
-    gap: 30px;
-    --moon-size: 75px;
+    justify-content: center;
+    min-width: 100%;
+    gap: 72px;
 }
-
-.moonleft {
-    background-color: transparent;
-    width: var(--moon-size);
-    height: var(--moon-size);
-    border-radius: 50%;
-    box-shadow: 24px 0px #fff; 
+.corner-links .left {
+    padding: 0px 0px 0px 48px;
+    min-width: 35%;
 }
-.moon {
-    background-color: #fff;
-    width: var(--moon-size);
-    height: var(--moon-size);
-    border-radius: 50%;
+.corner-links .center {
+    background-color: white;
+    width: 1px;
 }
-.moonright {
-    background-color: transparent;
-    width: var(--moon-size);
-    height: var(--moon-size);
-    border-radius: 50%;
-    box-shadow: -24px 0px #fff; 
+.corner-links .right {
+    padding: 0px 48px 0px 0px;
+    min-width: 35%;
+}
+.corner-links .right * {
+    padding: 0;
+}
+.corner-links .left * {
+    padding: 0;
+}
+.right a, .left a {
+    color: bisque;
 }

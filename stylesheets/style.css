@@ -17,7 +17,9 @@ a {
     color: inherit;
     cursor: url(../resources/cursors/Link-Select.cur), auto;
 }
-
+ul {
+    list-style: none;
+}
 body {
     position: absolute;
     top: 0;
@@ -26,6 +28,7 @@ body {
     bottom: 0;
     margin: 25px 75px 5px;
 }
+
 .contents {
     margin: 0px 100px;
     padding: 5px 0px;

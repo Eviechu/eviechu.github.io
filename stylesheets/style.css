@@ -152,12 +152,13 @@ My Corner Stylesheet
     padding: 0px 48px 0px 0px;
     min-width: 35%;
 }
-.corner-links .right * {
+.corner-links .right *, .corner-links .left * {
     padding: 0;
+    font-size: medium;
 }
-.corner-links .left * {
-    padding: 0;
-}
-.right a, .left a {
+.corner-links .right a, .corner-links .left a {
     color: bisque;
+}
+.corner-links .right li, .corner-links .left li {
+    color: white;
 }

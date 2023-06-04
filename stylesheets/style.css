@@ -83,12 +83,38 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     gap: 2px;
-    margin-top: 35px;
+    margin-top: 20px;
 }
 #buttons img, a {
     width: 88px;
     height: 31px;
 }
-#footer-text {
-    margin-bottom: 5px;
+
+.moonsymbol {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    --moon-size: 75px;
+}
+
+.moonleft {
+    background-color: transparent;
+    width: var(--moon-size);
+    height: var(--moon-size);
+    border-radius: 50%;
+    box-shadow: 24px 0px #fff; 
+}
+.moon {
+    background-color: #fff;
+    width: var(--moon-size);
+    height: var(--moon-size);
+    border-radius: 50%;
+}
+.moonright {
+    background-color: transparent;
+    width: var(--moon-size);
+    height: var(--moon-size);
+    border-radius: 50%;
+    box-shadow: -24px 0px #fff; 
 }

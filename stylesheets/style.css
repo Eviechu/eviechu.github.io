@@ -7,13 +7,14 @@
     display: flex;
     flex-direction: row;
     gap: 30px;
+    padding-top: 12px;
 }
 .moonleft {
     background-color: transparent;
     width: var(--moon-size);
     height: var(--moon-size);
     border-radius: 50%;
-    box-shadow: 24px 0px var(--moon-color); 
+    box-shadow: 20px 0px var(--moon-color); 
 }
 .moon {
     background-color: var(--moon-color);
@@ -26,12 +27,15 @@
     width: var(--moon-size);
     height: var(--moon-size);
     border-radius: 50%;
-    box-shadow: -24px 0px var(--moon-color);
+    box-shadow: -20px 0px var(--moon-color);
 }
 
 /* Navbar */
 
 .navbar {
+    position: sticky;
+    top: 0px;
+    background-color: black;
     border-bottom: 1px solid white;
     padding: 0px;
 }
@@ -44,13 +48,14 @@
     padding: 0px;
 }
 .nav-contents a {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 /* Footer */
 
 .footer {
-    position: absolute;
+    position: sticky;
+    background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -79,7 +84,7 @@ My Corner Stylesheet
 
 ----------------- */ 
 
-.corner {
+.corner-text {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,8 +93,12 @@ My Corner Stylesheet
     min-width: 100%;
     padding: 0;
 }
-
-.corner-links {
+.corner-content {
+    display: flex;
+    flex-direction: column;
+    line-height: 20px;
+}
+.corner-links-1, .corner-links-2 {
     display: flex;
     height: auto;
     flex-direction: row;
@@ -99,22 +108,21 @@ My Corner Stylesheet
     min-width: 100%;
     gap: 72px;
 }
-
-.corner-links .left {
+.corner-content .left {
     padding: 0px 0px 0px 48px;
     min-width: 35%;
 }
-.corner-links .center {
+.corner-content .center {
     background-color: white;
     width: 1px;
 }
-.corner-links .right {
+.corner-content .right {
     padding: 0px 48px 0px 0px;
     min-width: 35%;
 }
-.corner-links .right *, .corner-links .left * {
+.corner-content .right *, .corner-content .left * {
     padding: 0;
 }
-.corner-links .right a, .corner-links .left a {
+.corner-content .right a, .corner-content .left a {
     color: var(--link-color);
 }

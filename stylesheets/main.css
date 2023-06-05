@@ -1,9 +1,20 @@
+:root {
+    --text-color: rgb(232, 232, 234);
+    --alt-text-color: rgb(191, 191, 199);
+    --link-color: rgb(127, 196, 221);
+    --bg-color: rgb(0, 0, 0);
+    --moon-color: rgb(255, 255, 255);
+    --moon-size: 64px;
+}
+
 html {
     background-color: black;
     text-decoration: none;
     color: var(--text-color);
     min-height: 100%;
     list-style: none;
+    cursor: default;
+    line-height: 28px;
 }
 h1 {
     font-family: DejaVuSansBook;
@@ -34,6 +45,7 @@ a {
     text-decoration: inherit;
     color: inherit;
     font-size: 16px;
+    cursor: pointer;
 }
 ul {
     list-style: inherit;
@@ -41,14 +53,14 @@ ul {
 body {
     position: absolute;
     inset: 0;
-    margin: 25px 75px 5px;
+    margin: 0px 75px 5px;
 }
-
-:root {
-    --text-color: rgb(232, 232, 234);
-    --alt-text-color: rgb(191, 191, 199);
-    --link-color: rgb(127, 196, 221);
-    --bg-color: rgb(0, 0, 0);
-    --moon-color: rgb(255, 255, 255);
-    --moon-size: 75px;
+sup, sub {
+    font-size: 11px;
+    vertical-align: baseline;
+    position: relative;
+    top: -0.4em;
+}
+sub { 
+    top: 0.4em; 
 }

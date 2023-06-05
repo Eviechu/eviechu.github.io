@@ -1,0 +1,54 @@
+html {
+    background-color: black;
+    text-decoration: none;
+    color: var(--text-color);
+    min-height: 100%;
+    list-style: none;
+}
+h1 {
+    font-family: DejaVuSansBook;
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 32px;
+}
+h2 {
+    font-family: DejaVuSansBook;
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 24px;
+}
+h3 {
+    font-family: DejaVuSansBook;
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 18px;
+}
+p {
+    font-family: DejaVuSansBook;
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 16px;
+}
+a {
+    font-family: DejaVuSansBook;
+    text-decoration: inherit;
+    color: inherit;
+    font-size: 16px;
+}
+ul {
+    list-style: inherit;
+}
+body {
+    position: absolute;
+    inset: 0;
+    margin: 25px 75px 5px;
+}
+
+:root {
+    --text-color: rgb(232, 232, 234);
+    --alt-text-color: rgb(191, 191, 199);
+    --link-color: rgb(127, 196, 221);
+    --bg-color: rgb(0, 0, 0);
+    --moon-color: rgb(255, 255, 255);
+    --moon-size: 75px;
+}

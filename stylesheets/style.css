@@ -1,5 +1,10 @@
 @import url(main.css);
 
+.page-container {
+    position: relative;
+    min-height: 100%;
+}
+
 /* Main Logo */
 
 .moonsymbol {
@@ -33,11 +38,12 @@
 /* Navbar */
 
 .navbar {
-    position: sticky;
-    top: 0px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
     background-color: black;
     border-bottom: 1px solid white;
-    padding: 0px;
+    padding: 0;
 }
 .nav-contents {
     display: flex;
@@ -54,16 +60,12 @@
 /* Footer */
 
 .footer {
-    position: sticky;
+    height: fit-content;
     background-color: black;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
-    bottom: 0;
-    min-width: 100%;
-    height: auto;
     border-top: 1px solid white;
     padding: 12px 0 0 0;
     margin: 0;
@@ -96,29 +98,27 @@ My Corner Stylesheet
 .corner-content {
     display: flex;
     flex-direction: column;
-    line-height: 20px;
-}
-.corner-links-1, .corner-links-2 {
-    display: flex;
-    height: auto;
-    flex-direction: row;
     justify-content: center;
-    font-family: DejaVuSansBook;
-    margin: 28px 0px;
-    min-width: 100%;
-    gap: 72px;
+    align-items: center;
+    gap: 32px;
+    line-height: 20px;
+    margin: 20px;
 }
-.corner-content .left {
-    padding: 0px 0px 0px 48px;
-    min-width: 35%;
+.corner-content .left, .corner-content .right  {
+    min-width: 500px;
+    height: auto;
 }
 .corner-content .center {
     background-color: white;
     width: 1px;
 }
-.corner-content .right {
-    padding: 0px 48px 0px 0px;
-    min-width: 35%;
+.corner-links-1, .corner-links-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: auto;
+    width: auto;
+    gap: 72px;
 }
 .corner-content .right *, .corner-content .left * {
     padding: 0;

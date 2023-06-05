@@ -1,33 +1,4 @@
-@font-face {
-    font-family: IBM_VGA_8x16;
-    src: url(../resources/fonts/PxPlus_IBM_VGA_8x16.ttf);
-}
-
-html {
-    position: relative;
-    background-color: black;
-    font-family: IBM_VGA_8x16;
-    text-decoration: none;
-    color: white;
-    cursor: url(../resources/cursors/Normal-Select.cur), pointer;
-    min-height: 100%;
-}
-a {
-    text-decoration: inherit;
-    color: inherit;
-    cursor: url(../resources/cursors/Link-Select.cur), auto;
-}
-ul {
-    list-style: none;
-}
-body {
-    position: absolute;
-    top: 0;
-    right: 0;
-    left: 0;
-    bottom: 0;
-    margin: 25px 75px 5px;
-}
+@import url(main.css);
 
 /* Main Logo */
 
@@ -36,17 +7,16 @@ body {
     display: flex;
     flex-direction: row;
     gap: 30px;
-    --moon-size: 75px;
 }
 .moonleft {
     background-color: transparent;
     width: var(--moon-size);
     height: var(--moon-size);
     border-radius: 50%;
-    box-shadow: 24px 0px #fff; 
+    box-shadow: 24px 0px var(--moon-color); 
 }
 .moon {
-    background-color: #fff;
+    background-color: var(--moon-color);
     width: var(--moon-size);
     height: var(--moon-size);
     border-radius: 50%;
@@ -56,48 +26,28 @@ body {
     width: var(--moon-size);
     height: var(--moon-size);
     border-radius: 50%;
-    box-shadow: -24px 0px #fff; 
+    box-shadow: -24px 0px var(--moon-color);
 }
 
-/* Main Page */
+/* Navbar */
 
-.contents {
-    margin: 0px 100px;
-    padding: 5px 0px;
-    font-size: large;
-}
-.contents h1 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 0px 20px 0px;
-}
-
-.page .navbar #nav-contents {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 100px;
-    font-size: 25px;
-    list-style: none;
-    padding-bottom: 10px;
+.navbar {
     border-bottom: 1px solid white;
-    margin: 10px 0;
-    padding: 10px 0;
+    padding: 0px;
 }
-
-.navigators {
-    position: absolute;
+.nav-contents {
     display: flex;
     flex-direction: row;
-    gap: 80%;
-    align-items: center;
     justify-content: center;
-    left: 0;
-    right: 0;
-    bottom: 8em;
+    gap: 200px;
+    align-items: center;    
+    padding: 0px;
 }
+.nav-contents a {
+    font-size: 24px;
+}
+
+/* Footer */
 
 .footer {
     position: absolute;
@@ -107,20 +57,18 @@ body {
     justify-content: center;
     flex-wrap: wrap;
     bottom: 0;
-    width: 100%;
+    min-width: 100%;
     height: auto;
     border-top: 1px solid white;
+    padding: 12px 0 0 0;
+    margin: 0;
 }
-#buttons {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 2px;
-    margin-top: 20px;
+.footer-text p {
+    margin: 4px 0 8px 0;
+    padding: 0;
+    font-size: 12px;
 }
-#buttons img, a {
+.buttons img, a {
     width: 88px;
     height: 31px;
 }
@@ -131,15 +79,27 @@ My Corner Stylesheet
 
 ----------------- */ 
 
-.corner-links {
-    margin: 28px 0px;
-    height: auto;
+.corner {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 12px 0px;
+    min-width: 100%;
+    padding: 0;
+}
+
+.corner-links {
+    display: flex;
+    height: auto;
     flex-direction: row;
     justify-content: center;
+    font-family: DejaVuSansBook;
+    margin: 28px 0px;
     min-width: 100%;
     gap: 72px;
 }
+
 .corner-links .left {
     padding: 0px 0px 0px 48px;
     min-width: 35%;
@@ -154,11 +114,7 @@ My Corner Stylesheet
 }
 .corner-links .right *, .corner-links .left * {
     padding: 0;
-    font-size: medium;
 }
 .corner-links .right a, .corner-links .left a {
-    color: bisque;
-}
-.corner-links .right li, .corner-links .left li {
-    color: white;
+    color: var(--link-color);
 }

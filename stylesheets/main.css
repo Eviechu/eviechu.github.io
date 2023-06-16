@@ -2,10 +2,17 @@
     --text-color: rgb(232, 232, 234);
     --alt-text-color: rgb(191, 191, 199);
     --link-color: rgb(127, 196, 221);
+    --link-hover-color: rgb(163, 65, 65);
     --bg-color: rgb(0, 0, 0);
     --moon-color: rgb(255, 255, 255);
     --moon-size: 64px;
 }
+
+/* 
+* {
+    border: 1px solid red !important;
+} 
+*/
 
 html {
     font-family: DejaVuSansBook;
@@ -59,10 +66,10 @@ body {
     margin: 0px 75px 5px;
 }
 sup, sub {
-    font-size: 11px;
-    vertical-align: baseline;
-    position: relative;
+    font-size: 9px;
+    vertical-align: text-top;
     top: -0.4em;
+    position: relative;
 }
 sub { 
     top: 0.4em; 

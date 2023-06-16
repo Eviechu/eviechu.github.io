@@ -98,14 +98,15 @@ My Corner Stylesheet
 .corner-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 32px;
+    gap: 36px;
     line-height: 20px;
     margin: 20px;
 }
 .corner-content .left, .corner-content .right  {
     min-width: 500px;
+    max-width: 500px;
+    width: 500px;
     height: auto;
 }
 .corner-content .center {
@@ -125,4 +126,16 @@ My Corner Stylesheet
 }
 .corner-content .right a, .corner-content .left a {
     color: var(--link-color);
+}
+.corner-content .right a:hover, .corner-content .left a:hover {
+    color: var(--link-hover-color);
+}
+.corner-content li {
+    max-height: 20px;
+}
+.corner-content sup {
+    font-size: 9px;
+    vertical-align: text-top;
+    top: -0.4em;
+    position: relative;
 }
